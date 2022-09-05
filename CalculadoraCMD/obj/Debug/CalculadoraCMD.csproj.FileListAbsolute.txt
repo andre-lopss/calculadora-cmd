@@ -1,0 +1,8 @@
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\bin\Debug\CalculadoraCMD.exe.config
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\bin\Debug\CalculadoraCMD.exe
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\bin\Debug\CalculadoraCMD.pdb
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\obj\Debug\CalculadoraCMD.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\obj\Debug\CalculadoraCMD.csproj.SuggestedBindingRedirects.cache
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\obj\Debug\CalculadoraCMD.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\obj\Debug\CalculadoraCMD.exe
+C:\Users\andre\source\repos\CalculadoraCMD\CalculadoraCMD\obj\Debug\CalculadoraCMD.pdb
