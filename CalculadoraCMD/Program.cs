@@ -34,6 +34,12 @@ namespace CalculadoraCMD
                     case Menu.Multiplicacao:
                         Mult();
                         break;
+                    case Menu.Potencia:
+                        Pot();
+                        break;
+                    case Menu.Raiz:
+                        Raiz();
+                        break;
                     case Menu.Sair:
                         escolheuSair |= true;
                         break;
@@ -94,7 +100,33 @@ namespace CalculadoraCMD
             Console.WriteLine("Digite o segundo número: ");
             int b = int.Parse(Console.ReadLine());
             int result = a * b;
-            Console.WriteLine($"O resultado da multiplicação de {a} por {b} é: {result}");
+            Console.WriteLine($"O resultado da multiplicação de {a} vezes {b} é: {result}");
+            Console.WriteLine("\nAperte ENTER para voltar ao MENU");
+            Console.ReadLine();
+        }
+
+        static void Pot()
+        {
+            Console.Clear();
+            Console.WriteLine("POTÊNCIA DE UM NÚMERO");
+            Console.WriteLine("Digite a base: ");
+            int baseNum = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o expoente: ");
+            int expo = int.Parse(Console.ReadLine());
+            int result = (int)Math.Pow(baseNum, expo);
+            Console.WriteLine($"O resultado da exponenciação é: {result}");
+            Console.WriteLine("\nAperte ENTER para voltar ao MENU");
+            Console.ReadLine();
+        }
+
+        static void Raiz()
+        {
+            Console.Clear();
+            Console.WriteLine("RAIZ DE UM NÚMERO");
+            Console.WriteLine("Digite o número: ");
+            int a = int.Parse(Console.ReadLine());
+            double result = Math.Sqrt(a);
+            Console.WriteLine($"A raiz de {a} é: {result}");
             Console.WriteLine("\nAperte ENTER para voltar ao MENU");
             Console.ReadLine();
         }
