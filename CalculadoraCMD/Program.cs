@@ -23,7 +23,17 @@ namespace CalculadoraCMD
                 {
                     case Menu.Soma:
                         Soma();
-                        break;  
+                        break;
+
+                    case Menu.Subtração:
+                        Sub();
+                        break;
+                    case Menu.Divisao:
+                        Divi();
+                        break;
+                    case Menu.Multiplicacao:
+                        Mult();
+                        break;
                     case Menu.Sair:
                         escolheuSair |= true;
                         break;
@@ -43,6 +53,48 @@ namespace CalculadoraCMD
             int b = int.Parse(Console.ReadLine());
             int soma = a + b;
             Console.WriteLine($"O resultado da soma de {a} + {b} é: {soma}");
+            Console.WriteLine("\nAperte ENTER para voltar ao MENU");
+            Console.ReadLine();
+        }
+
+        static void Sub()
+        {
+            Console.Clear();
+            Console.WriteLine("SUBTRAÇÃO DE DOIS NÚMEROS");
+            Console.WriteLine("Digite o primeiro número: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número: ");
+            int b = int.Parse(Console.ReadLine());
+            int result = a - b;
+            Console.WriteLine($"O resultado da subtração de {a} - {b} é: {result}");
+            Console.WriteLine("\nAperte ENTER para voltar ao MENU");
+            Console.ReadLine();
+        }
+
+        static void Divi()
+        {
+            Console.Clear();
+            Console.WriteLine("DIVISÃO DE DOIS NÚMEROS");
+            Console.WriteLine("Digite o primeiro número: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número: ");
+            int b = int.Parse(Console.ReadLine());
+            float result = (float)a / (float)b;
+            Console.WriteLine($"O resultado da divisão de {a} por {b} é: {result}");
+            Console.WriteLine("\nAperte ENTER para voltar ao MENU");
+            Console.ReadLine();
+        }
+
+        static void Mult()
+        {
+            Console.Clear();
+            Console.WriteLine("MULTIPLICAÇÃO DE DOIS NÚMEROS");
+            Console.WriteLine("Digite o primeiro número: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número: ");
+            int b = int.Parse(Console.ReadLine());
+            int result = a * b;
+            Console.WriteLine($"O resultado da multiplicação de {a} por {b} é: {result}");
             Console.WriteLine("\nAperte ENTER para voltar ao MENU");
             Console.ReadLine();
         }
